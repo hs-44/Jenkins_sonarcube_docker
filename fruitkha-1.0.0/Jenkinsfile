@@ -29,17 +29,17 @@ pipeline {
 
                     sh '''
 
-                    ssh -o StrictHostKeyChecking=no ubuntu@3.95.252.192 "
+                    ssh -o StrictHostKeyChecking=no ubuntu@98.90.195.26 "
                     mkdir -p ~/website
                     "
 
 
                     scp -o StrictHostKeyChecking=no -r \
                     fruitkha-1.0.0 \
-                    ubuntu@3.95.252.192:~/website/
+                    ubuntu@98.90.195.26:~/website/
 
 
-                    ssh -o StrictHostKeyChecking=no ubuntu@3.95.252.192 "
+                    ssh -o StrictHostKeyChecking=no ubuntu@98.90.195.26 "
 
                     cd ~/website/fruitkha-1.0.0
 
@@ -59,7 +59,7 @@ pipeline {
                     "
 
 
-                    ssh -o StrictHostKeyChecking=no ubuntu@3.95.252.192 "
+                    ssh -o StrictHostKeyChecking=no ubuntu@98.90.195.26 "
 
                     docker ps
 
